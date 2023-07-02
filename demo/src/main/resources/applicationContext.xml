@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean id="userDao" class="shop.stopyc.dao.impl.UserDaoImpl">
+        <property name="username" value="zhangsan"></property>
+        <property name="password" value="123456"></property>
+    </bean>
+
+    <bean id="userService" class="shop.stopyc.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+
+</beans>
